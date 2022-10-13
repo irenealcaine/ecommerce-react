@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Raleway, 'sans-serif';
+}
+
+a{
+  text-decoration: none;
+  color: #06b6d4;
+}
