@@ -2,13 +2,17 @@ import React from 'react'
 
 import { products } from './data/products'
 const Best = () => {
-  let besties = products.sort((a, b) => {
+
+  const besties = products
+
+  besties.sort((a, b) => {
     if (a.rating.rate > b.rating.rate) {
       return -1
     } else if (a.rating.rate < b.rating.rate) {
       return 1
     } return 0
   })
+
   return (
     <div style={{ width: '65%', margin: 20, display: 'flex', flexWrap: 'wrap' }}>
       {besties.slice(0, 3).map((product) => (

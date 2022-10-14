@@ -3,7 +3,7 @@ import React from 'react'
 import { products } from './data/products'
 
 const Populars = () => {
-  let tops = products.sort((a, b) => {
+  const tops = products.sort((a, b) => {
     if (a.rating.count > b.rating.count) {
       return -1
     } else if (a.rating.count < b.rating.count) {
