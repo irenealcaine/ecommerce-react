@@ -1,8 +1,16 @@
 import React from 'react'
+import SideBar from '../SideBar'
+import List from '../List'
+import { Container } from '@mui/material'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <>
+      <Container style={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
+        <SideBar />
+        <List />
+      </Container>
+    </>
   )
 }
 

@@ -1,8 +1,8 @@
-import { AppBar, Divider, IconButton, List, ListItem, ListItemButton, ListItemText, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
+import { AppBar, Divider, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material'
 import { Container } from '@mui/system';
 import React from 'react'
 import { makeStyles } from 'tss-react/mui';
-import { AccountCircleOutlined, FavoriteBorder, ShoppingBagTwoTone, ShoppingCart } from '@mui/icons-material'
+import { AccountCircleOutlined, FavoriteBorder, ShoppingCart } from '@mui/icons-material'
 
 const Header = () => {
 
@@ -22,22 +22,29 @@ const Header = () => {
         <Toolbar style={{ dislay: 'flex', justifyContent: 'space-between' }}>
 
           <Typography
-            variant='h6'
+            variant='h4'
+            style={{ fontFamily: 'Caveat' }}
           >
-            Nombre
+            E-commerce
           </Typography>
 
           <Divider />
           <nav aria-label="secondary mailbox folders">
-            <List style={{ display: 'flex' }}>
+            <List style={{ display: 'flex' }}
+            >
               <ListItem disablePadding>
                 <ListItemButton>
-                  <ListItemText primary="Trash" />
+                  <ListItemText primary="Catálogo" />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton component="a" href="#simple-list">
-                  <ListItemText primary="Spam" />
+                  <ListItemText primary="Trending" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton component="a" href="#simple-list">
+                  <ListItemText primary="Opiniones" />
                 </ListItemButton>
               </ListItem>
             </List>

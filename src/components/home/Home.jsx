@@ -9,7 +9,7 @@ import Trending from './Trending'
 const Home = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <Products />
       <Carousel1 />
       <Trending />

@@ -32,14 +32,14 @@ const Carousel1 = () => {
         customTransition="all 4000ms ease-in-out"
         transitionDuration={4000}
       >
-        {ads.map((ad) => {
+        {ads.slice(0, (ads.length) / 2).map((ad) => {
           return (
             <div style={{
-              backgroundImage: `linear-gradient(to ${ad.direction}, ${ad.color}00, ${ad.color}), url(${ad.image})`, backgroundSize: 'cover', height: '400px', width: '100%', color: 'white'
+              backgroundImage: `linear-gradient(to right, ${ad.color}11, ${ad.color}dd), url(${ad.image})`, backgroundSize: 'cover', height: '400px', width: '100%', color: 'white'
             }}>
-              <div style={{ textAlign: 'end', top: '50%', position: 'relative' }}>
-                <Typography variant='h3'>{ad.title}</Typography>
-                <Typography variant='h4'>{ad.description}</Typography>
+              <div style={{ textAlign: 'end', top: '50%', right: '50px', position: 'relative' }}>
+                <Typography variant='h1' style={{ fontFamily: 'Caveat' }}>{ad.title}</Typography>
+                <Typography variant='h4' style={{ fontFamily: 'Raleway' }}>{ad.description}</Typography>
               </div>
             </div>
           )
