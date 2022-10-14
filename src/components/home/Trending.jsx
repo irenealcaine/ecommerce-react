@@ -1,8 +1,15 @@
 import React from 'react'
+import Best from '../Best'
+import Populars from '../Populars'
 
 const Trending = () => {
   return (
-    <div>Trending</div>
+    <>
+      <p>Populares:</p>
+      <Populars />
+      <p>Mejor valorados:</p>
+      <Best />
+    </>
   )
 }
 
